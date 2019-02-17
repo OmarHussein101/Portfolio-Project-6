@@ -1,0 +1,796 @@
+/* Start Public Styles */
+
+* , *:after , *:before {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:lucida sans ;                
+}
+
+.container {
+    width:85%;
+    margin:auto;
+}
+
+.margin-bottom {
+    margin-bottom:20px
+}
+
+.clearfix {
+    clear:both;
+}
+
+/* End Public Styles */
+
+/* Start Navbar */
+
+.navbar {
+    padding:20px 0;
+    overflow:hidden;
+    background:#fff;
+    position:relative;
+    border-bottom:1px solid #000
+}
+
+.navbar .logo {
+    width:50%;
+    float:left;
+}
+
+.navbar .logo .logo-text{
+    font-size:30px;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.navbar input , .navbar label {
+    position:absolute;
+    top:13px;
+    right:25px;
+}
+
+.navbar input {
+    display: none
+}
+
+.navbar label {
+    display:block;
+    width:15px;
+    height:15px;
+    background:url('../images/Navbar/open.png') no-repeat ;
+    background-size:cover;
+    padding:20px;
+    cursor:pointer;
+}
+
+.navbar input:checked ~ .ul-list {
+    display:block;
+}
+
+.navbar input:checked ~ label {
+    background:url('../images/Navbar/close.png') no-repeat ;
+    background-size:cover;
+}
+
+.navbar .ul-list {
+    width:50%;
+    float:left;
+    list-style:none;
+}
+
+.navbar .ul-list .list-item {
+    display:inline-block;
+}
+
+.navbar .ul-list .list-item a {
+    display:block;
+    color:#222;
+    text-decoration:none;
+    padding:10px 15px;
+    font-weight:bold;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.navbar .ul-list .list-item a:hover {
+    color:#eb5424
+}
+
+/* End Navbar */
+
+/* Start Media for Navbar Style */ 
+
+@media (min-width : 992px) {
+    .navbar label {
+        display:none
+    }
+}
+
+@media (max-width : 991px) {
+    .navbar .logo {
+        width:100%;
+        float:none;
+    }
+    
+    .navbar .ul-list {
+        width:100%;
+        float:none;
+        margin-top:20px;
+        display:none
+    }
+    
+    .navbar .ul-list .list-item {
+        display:block;
+        text-align:center;
+    }
+}
+
+/* End Media for Navbar Style */ 
+
+/* Start Home */
+
+.home {
+    width:100%;
+    height:500px;
+    background-image:url(../images/Home/home-bg.jpg);
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    position:relative;
+}
+
+.home .home-information {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+
+.home .home-information .home-title {
+    font-size:60px;
+    font-weight:bold;
+    color:#5e5e5e;
+    margin-bottom:20px;
+}
+
+.home .home-information .home-info {
+    font-size:35px;
+    color:#eb5424;
+    margin-bottom:20px;
+}
+
+.home .home-information .home-desc {
+    font-size:20px;
+    line-height:1.5;
+    color:#888;
+    margin-bottom:20px;
+}
+
+.home .home-information .home-desc span {
+    color:#000;
+    cursor:pointer;
+}
+
+.home .home-information .home-btn {
+    width:150px;
+    height:50px;
+    padding:15px;
+    font-size:18px;
+    font-weight:bold;
+    background-color:#eb5424;
+    color:#FFF;
+    border:0;
+    cursor:pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;    
+}
+
+.home .home-information .home-btn:hover {
+    background:#FFF;
+    color:#eb5424;
+}
+
+/* End Home */
+
+/* Start Media for Home Style */ 
+
+@media (max-width:768px) {
+    
+    .home .home-information .home-title {
+        font-size:40px;
+        color:#FFF;
+    }
+    
+    .home .home-information .home-info {
+        font-size:25px;
+    }
+    
+    .home .home-information .home-desc {
+        font-size:15px;
+    }
+}
+
+/* End Media for Home Style */
+
+/* Start My Work */
+
+.work {
+    width:100%;
+    height:auto;
+    padding:50px 0;
+    background:#FFF;
+    overflow:hidden;
+}
+
+.work .work-title {
+    font-size:60px;
+    font-weight:bold;
+    font-weight:bold;
+}
+
+.work .work-title span {
+    font-weight:normal;
+}
+
+.work .part {
+    margin-top:20px;
+    width:30%;
+    float:left;
+    height:470px;
+    padding:100px 0;
+    border:1px solid #888;
+    box-sizing:border-box;
+    text-align:center;
+    margin-left:5%;
+}
+
+.work .first {
+    margin-left:0;
+}
+
+.work .part .icon {
+    color:#888;
+    margin-bottom:20px;
+}
+
+.work .part .part-title {
+    font-size:25px;
+    color:#eb5424;
+    margin-bottom:20px;
+}
+
+.work .part .line {
+    width:60%;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.work .part .part-desc {
+    font-size:14px;
+    color:#888;
+    padding:20px;
+}
+
+/* End My Work */
+
+/* Start Media for My Work Style */
+
+@media (max-width:768px){
+    .work .part {
+        width:47%;
+    }
+    
+    .work .last {
+        margin-left:0;
+    }
+}
+
+@media (max-width:575px) {
+    .work .part {
+        width:100%;
+        float:none;
+        margin-left:0;
+    }
+}
+
+@media (min-width:576px) and (max-width:768){
+    .work .part {
+        width:47%;
+    }
+    
+    .work .last {
+        margin-left:0;
+    }
+}
+
+/* End Media for My Work Style */
+
+/* Start Portfolio */
+
+.portfolio {
+    background:#F8F8F8;
+    padding-top:20px;
+    overflow:hidden;
+}
+
+.portfolio .portfolio-title {
+    text-align:center;
+    font-size:35px;
+}
+
+.portfolio .portfolio-title span {
+    font-weight:normal;
+}
+
+.portfolio .portfolio-list {
+    list-style:none;
+    text-align:center;
+    margin:20px 0;
+}
+
+.portfolio .portfolio-list .portfolio-item {
+    display:inline-block;
+    width:100px;
+    padding:10px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;    
+}
+
+.portfolio .portfolio-list .portfolio-item:hover {
+    background:#eb5424;
+    color:#FFF;
+    cursor:pointer;
+}
+
+.portfolio .portfolio-list .portfolio-item.active {
+    background:#eb5424;
+    color:#FFF;
+}
+
+.box div {
+    width:25%;
+    float:left;
+    font-size:0;        
+    position:relative;
+}
+
+.box div img {
+    width:100%;
+}
+
+.box div .overlay {
+    font-size:20px;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background: rgba(235,84,36,0.5);
+    opacity:0;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;    
+}
+
+.box div .overlay span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#FFF;
+    display:block;
+    padding:10px 20px;
+    cursor:pointer;
+    border:2px solid #eb5424
+}
+
+.box div:hover .overlay {
+    opacity:1;
+    cursor:pointer;
+}
+
+/* End Portfolio */
+
+/* Start Media for Portfolio style */
+
+@media (max-width:575px) {
+    .portfolio .portfolio-list .portfolio-item {
+        display:block;
+        margin:auto;
+    }
+    
+    .box div {
+        width:100%;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    .box div {
+        width:50%;
+    }
+}
+
+@media (max-width:575px) {
+    .portfolio .portfolio-list .portfolio-item {
+        display:block;
+        margin:auto;
+    }
+    
+    .box div {
+        width:100%;
+    }
+}
+
+/* End Media for Portfolio Style */
+
+/* Start Profile skills */
+
+.profile-skills {
+    padding:50px 0;
+    overflow:hidden;
+}
+
+.profile-skills .profile {
+    width:50%;
+    float:left;
+}
+
+.profile-skills .profile .profile-list {
+    list-style:none;
+}
+
+.profile-skills .profile .profile-list .profile-item {
+    margin-bottom:8px;
+}
+
+.profile-skills .profile .profile-list .profile-item span {
+    display:inline-block;
+    width:100px;
+    font-weight:bold;
+}
+
+.profile-skills .profile .profile-list .profile-item span.web {
+    font-weight:normal;
+    color:#eb5424;
+    cursor:pointer;
+}
+
+.profile-skills .profile .profile-title,
+.profile-skills .skills .skills-title{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.profile-skills .profile .profile-title span,
+.profile-skills .skills .skills-title span {
+    font-weight:normal; 
+}
+
+.profile-skills .skills {
+    width:50%;
+    float:left;
+}
+
+.profile-skills .skills .skills-desc {
+    font-size:15px;
+    color:#888;
+    line-height:1.5;
+    margin-bottom:20px;
+}
+
+.profile-skills .skills .bar {
+    margin-bottom:10px;
+    padding:10px;
+    overflow:hidden;
+}
+
+.profile-skills .skills .bar .title {
+    float:left
+}
+
+.profile-skills .skills .bar .perc {
+    float:right;
+    margin-right:100px;
+}
+
+.profile-skills .skills .bar .parent {
+    width:100%;
+    height:2px;
+    background:#f8f8f8;
+    clear:both;
+    position:relative;
+    top:5px;
+}
+
+.profile-skills .skills .bar .parent span {
+    background:#eb5424;
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    bottom:0;
+}
+
+.profile-skills .skills .bar .parent span.sp1 {
+    width:100%;
+}
+
+.profile-skills .skills .bar .parent span.sp2 {
+    width:90%;
+}
+
+.profile-skills .skills .bar .parent span.sp3 {
+    width:80%;
+}
+
+/* Start Media for Profile skills Style */
+
+@media (max-width:575px) {
+    .profile-skills .profile,
+    .profile-skills .skills {
+        width:100%;
+        float:none;
+    }
+    
+    .profile-skills .profile {
+        margin-bottom:20px;
+    }
+}
+
+/* End Media for Profile skills Style */
+
+/* Start Creative */
+
+.creative {
+    height:500px;
+    background:url(../images/creative/about-bg.jpg);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.creative .creative-info {
+    padding-top:100px;
+    width:50%;
+    float:right;
+}
+
+.creative .creative-info .info-title {
+    font-weight:bold;
+    font-size:50px;
+} 
+
+.creative .creative-info .info-title span,
+.creative .creative-info .info-dir span{
+    font-weight:normal;
+}
+
+.creative .creative-info .info-dir {
+    font-size:40px;
+    color:#eb5424;
+    margin-bottom:20px
+}
+
+.creative .creative-info .info-desc {
+    color:#000;
+    line-height:1.8;
+}
+
+.creative .creative-info .info-desc a {
+    text-decoration:none;
+}
+
+/* End Creative */
+
+/* Start Media for Creative Style */
+
+@media (max-width:991px) {
+    .creative {
+        height:auto;
+    }
+    
+    .creative .creative-info {
+        padding-top:10px;
+        width:100%;
+        float:none;
+    }
+    
+    .creative .creative-info .info-dir {
+        font-size:30px;
+    }
+}
+
+/* End Media for Creative Style */
+
+/* Start Social */
+
+.social-media {
+    width:100%;
+    height:auto;
+    overflow:hidden;
+}
+
+.social-media .social {
+    width:33.333%;
+    float:left;
+    box-sizing:border-box;
+    padding:100px 0 100px 60px;
+}
+
+.social-media .social.facebook {
+    background:#3b5998;
+}
+
+.social-media .social.twitter {
+    background:#498cbf;
+}
+
+.social-media .social.pin     {
+    background:#cc2127;
+}
+
+.social-media .social .icon {
+    width:50px;
+    height:50px;
+    background:#FFF;
+    color:#888;
+    text-align:center;
+    line-height:50px;
+    float:left;
+    margin-right:10px;
+}
+
+.social-media .social p {
+    font-weight:bold;
+    font-size:20px;
+    color:#FFF;
+    text-transform:uppercase;
+}
+
+.social-media .social p span {
+    display:block;
+    margin-bottom:8px;
+}
+
+.social-media .social p span.info2 {
+    font-weight:normal;
+}
+
+/* End Social */
+
+/* Start Media for Social Style */
+
+@media (max-width:991px) {
+    .social-media .social {
+        width:100%;
+        float:none;
+    }
+}
+
+/* End Media for Social Style */
+
+/* Start Drop */
+
+.drop {
+    padding:50px 0;
+    text-align:center;
+}
+
+.drop .drop-title {
+    font-size:60px;
+    margin-bottom:30px;
+}
+
+.drop .drop-title span {
+    font-weight:normal;
+}
+
+.drop form {
+    width:50%;
+    margin:auto;
+}
+
+.drop form input {
+    box-sizing:border-box;
+    padding:5px;
+    margin-bottom:10px;
+    outline:1;
+    border:1px solid #888;
+}
+
+.drop form .form-input {
+    overflow:hidden;
+}
+
+.drop form .form-input input {
+    width:49%;
+}
+
+.drop form .form-input input[type=text] {
+    float:left
+}
+
+.drop form .form-input input[type=email] {
+    float:right;
+}
+
+.drop form input.sub {
+    width:100%;
+    display:block;
+    border:1px solid #888;
+}
+
+.drop form textarea {
+    width:100%;
+    display:block;
+    outline:0;
+    border:1px solid #888;
+}
+
+.drop form input[type=submit] {
+    width:60%;
+    background:#FFF;
+    border:1px solid #888;
+    color:#888;
+    cursor:pointer;
+    margin-top:5px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;    
+}
+
+.drop form input[type=submit]:hover {
+    background-color:#eb5424;
+    color:#FFF;
+    cursor:pointer;
+}
+
+/* End Drop */
+
+/* Start Media for drop Style */
+
+@media (max-width:575px) {
+    .drop .drop-title {
+        font-size:35px;
+    }
+    
+    .drop form {
+        width:90%;
+    }
+    
+    .drop form .form-input input {
+        width:100%;
+    }
+}
+
+/* End Media for drop Style */
+
+/* Start Footer */
+
+.footer {
+    text-align:center;
+    padding:10px 0;
+}
+
+.footer .footer-desc {
+    color:#888;
+    margin:0;
+}
+
+/* End Footer */
